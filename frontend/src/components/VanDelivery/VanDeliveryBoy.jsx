@@ -174,8 +174,8 @@ const DeliveryBoyTable = () => {
     const fetchData = async () => {
       try {
         const [deliveryRes, orderRes] = await Promise.all([
-          fetch('http://localhost:5000/api/delivery-boys'),
-          fetch('http://localhost:5000/api/orders'),
+          fetch('https://inspired-grow-project.onrender.com/api/delivery-boys'),
+          fetch('https://inspired-grow-project.onrender.com/api/orders'),
         ]);
 
         const deliveryData = await deliveryRes.json();

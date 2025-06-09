@@ -100,8 +100,8 @@ const BookingSlot = () => {
 
         try {
             const url = editing
-                ? `http://localhost:5000/api/booking-slot-update/${bookingId}`
-                : 'http://localhost:5000/api/booking-slot';
+                ? `https://inspired-grow-project.onrender.com/api/booking-slot-update/${bookingId}`
+                : 'https://inspired-grow-project.onrender.com/api/booking-slot';
 
             const method = editing ? 'PUT' : 'POST';
 

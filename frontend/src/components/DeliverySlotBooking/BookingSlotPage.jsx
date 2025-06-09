@@ -11,7 +11,7 @@ const BookingSlotPage = () => {
 
     const fetchSlots = async () => {
         try {
-            const res = await fetch('http://localhost:5000/api/all-slot');
+            const res = await fetch('https://inspired-grow-project.onrender.com/api/all-slot');
             const data = await res.json();
             if (res.ok) {
                 setSlots(data.slots || data);

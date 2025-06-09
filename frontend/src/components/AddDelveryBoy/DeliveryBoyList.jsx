@@ -20,7 +20,7 @@ const DeliveryBoyList = () => {
 
   const fetchDeliveryBoys = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/delivery-boys');
+      const response = await fetch('https://inspired-grow-project.onrender.com/api/delivery-boys');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

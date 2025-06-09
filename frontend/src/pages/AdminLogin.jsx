@@ -18,7 +18,7 @@ const AdminLogin = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://inspired-grow-project.onrender.com/auth/login",
         admin,
         { withCredentials: true }
       );

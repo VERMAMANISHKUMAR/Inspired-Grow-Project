@@ -15,7 +15,7 @@ const UserLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://192.168.1.13:5000/admiaddinguser/userlogin",
+        "https://inspired-grow-project.onrender.com/admiaddinguser/userlogin",
         user,
         { withCredentials: true }
       );

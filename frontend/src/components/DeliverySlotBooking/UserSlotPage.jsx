@@ -70,7 +70,7 @@ const UserSlotPage = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/userslot/booking", {
+      const response = await fetch("https://inspired-grow-project.onrender.com/api/userslot/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -37,7 +37,7 @@ const MybookingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/booking-orders', formData);
+      const response = await axios.post('https://inspired-grow-project.onrender.com/api/booking-orders', formData);
       toast.success(`Booking ${response.data.bookNumber} submitted successfully!`, { autoClose: 3000 });
       // Reset form with a new auto-generated booking number
       setFormData({

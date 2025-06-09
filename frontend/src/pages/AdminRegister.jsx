@@ -17,7 +17,7 @@ const AdminRegister = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/auth/register-admin", admin);
+      await axios.post("https://inspired-grow-project.onrender.com/auth/register-admin", admin);
 
       // Show success toast
       toast.success("Admin registered successfully!", {

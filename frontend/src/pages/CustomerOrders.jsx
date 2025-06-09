@@ -53,7 +53,7 @@ function Order() {
   const fetchOrders = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/orders', {
+      const response = await fetch('https://inspired-grow-project.onrender.com/api/orders', {
         headers: { 'x-api-key': API_KEY },
       });
       if (!response.ok) throw new Error('Failed to fetch orders');
@@ -119,7 +119,7 @@ function Order() {
         customerNumber: editValues.customerNumber
       };
 
-      const response = await fetch(`http://localhost:5000/api/orders/${orderId}`, {
+      const response = await fetch(`https://inspired-grow-project.onrender.com/api/orders/${orderId}`, {
         method: 'PUT',
         headers: {
           'x-api-key': API_KEY,

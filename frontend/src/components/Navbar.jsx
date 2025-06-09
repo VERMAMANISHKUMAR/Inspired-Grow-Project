@@ -29,9 +29,9 @@ const Navbar = ({ isSidebarOpen, setSidebarOpen }) => {
 
       let url =
         role === "admin"
-          ? "http://192.168.1.13:5000/auth/profile"
+          ? "https://inspired-grow-project.onrender.com/auth/profile"
           : role === "user"
-          ? "http://192.168.1.13:5000/admiaddinguser/profile"
+          ? "https://inspired-grow-project.onrender.com/admiaddinguser/profile"
           : null;
 
       if (!url) {
